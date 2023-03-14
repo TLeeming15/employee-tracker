@@ -1,0 +1,11 @@
+Show all employees with manager names:
+select * from employee left  join employee as manager on employee.manager_id = manager.id;
+
+Do for-loop over all employees:
+
+Show job and department information for each employee
+select * from role INNER JOIN department ON role.department_id = department.id AND role.id = 1;
+
+Combine the two result arrays.
+
+Feed the master array into console.table
