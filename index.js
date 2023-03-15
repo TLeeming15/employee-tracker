@@ -25,14 +25,6 @@ const questions = [
 function askTasks() {
     return inquirer.prompt(questions)
         .then((answers) => {
-
-            // if(answers.task==="Quit") {
-            //     process.exit();
-            // } else {
-            //     // Do MySQL operation
-            //     // Display MySQL table
-            //     askTasks();
-            // }
             
             // if(answers.task==="Quit")
             switch(answers.task) {
@@ -67,7 +59,7 @@ const db = mysql.createConnection(
 
 function viewAllEmployees() {
     // Query database
-    //'SELECT * FROM `table` WHERE `name` = "Page" AND `age` > 45',
+  
     db.query("SELECT employee.id AS id, employee.first_name AS first_name, employee.role_id AS role_id, manager.first_name AS manager_first_name, manager.last_name AS manager_last_name FROM `employee` LEFT JOIN `employee` as `manager` ON employee.manager_id = manager.id", function (err, results) {
         console.log(results);
         //console.log(results);

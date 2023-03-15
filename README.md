@@ -37,13 +37,13 @@ The larger a company becomes the more complex its structure becomes. Managing an
 
 The following images show the application in action. This is a link to the video demonstration: 
 
-This image shows the user input:
+This image shows the start menu:
 
-<img src=".png" alt=""/>
+<img src="assets/npm-start.png" alt="A list of options for the user to choose from"/>
 
-This image shows the generated README.md from the user input above:
+This image shows the table of all the employees:
 
-<img src=".png" alt=""/>
+<img src="assets/all-employees.png" alt="A table of all employees with roles, id, and manager"/>
 
 
 
