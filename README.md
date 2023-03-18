@@ -35,7 +35,7 @@ The larger a company becomes the more complex its structure becomes. Managing an
 
 ## Usage
 
-The following images show the application in action. This is a link to the video demonstration: 
+The following images show the application in action. This is a link to the video demonstration: https://watch.screencastify.com/v/sCcBvaRUWpUUqfdoQfti
 
 This image shows the start menu:
 

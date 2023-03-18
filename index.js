@@ -10,7 +10,7 @@ const questions = [
         name: 'task',
         message: 'What would you like to do?',
         choices: [
-            'View All Employee', 
+            'View All Employees', 
             'Add Employee', 
             'Update Employee Role', 
             'View All Roles', 
@@ -72,8 +72,8 @@ function viewAllEmployees() {
         }
         
         console.table(results)
-        askTasks()
         
+        askTasks()
     });
 }
 
