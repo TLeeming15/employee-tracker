@@ -30,7 +30,7 @@ function askTasks() {
             switch(answers.task) {
                 case "Quit":
                     process.exit();
-                case "View All Employee":
+                case "View All Employees":
                     // Do MySQL operation and display MySQL table
                     viewAllEmployees();
                     break;
@@ -68,13 +68,12 @@ function viewAllEmployees() {
             aRoleId = anEmployee.role_id;
 
             var query = `select * from role INNER JOIN department ON role.department_id = department.id AND role.id = ${aRoleId}`;
-            // do another query..
-            // concat this new role-departments-array to results[i]
+           
         }
-        // Print result after the for loop is done expanding the employees info
+        
         console.table(results)
-        // TODO:
-            //For-loop to combine with the second query to get all role details and department names
+        askTasks()
+        
     });
 }
 
